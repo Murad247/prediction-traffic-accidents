@@ -13,7 +13,6 @@ parser.add_argument('-o', '--out_path_to_csv_file', default='predictions.csv', t
 args = parser.parse_args()
 
 X = pd.read_csv(args.path_to_train_dataset, sep=',')
-pd.set_option('display.max_rows', 10)
 X = X.drop('id', axis=1)
 Y = X.copy()
 
