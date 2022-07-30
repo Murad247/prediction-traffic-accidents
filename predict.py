@@ -4,7 +4,6 @@
 import pandas as pd
 from sklearn import tree
 import numpy as np
-import matplotlib.pyplot as plt
 import argparse
 
 parser = argparse.ArgumentParser(description='Predictions')
@@ -113,17 +112,6 @@ for i, arr in enumerate(count):
     x = np.arange(0, 24)
     y = arr
     accident_time.append(np.array(arr))
-#     fig, ax = plt.subplots()
-#     ax.set_title(names[i])
-#     ax.bar(x, y)
-#     ax.set_xticks(x)
-#     ax.set_xticklabels(x)
-#     ax.set_xlabel('Час')
-#     ax.set_facecolor('seashell')
-#     fig.set_facecolor('floralwhite')
-#     fig.set_figwidth(12)    #  ширина Figure
-#     fig.set_figheight(6)    #  высота Figure
-#     plt.show()
     
 
 dang = []
