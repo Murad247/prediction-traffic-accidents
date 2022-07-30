@@ -386,6 +386,6 @@ file['Ранено детей'] = [arr[i][3] for i in range(len(arr))]
 
 file.to_csv(args.out_path_to_csv_file, index=False)
 print(f'Предсказания сохранены в файле {args.out_path_to_csv_file}')
-file = pd.read_csv(args.out_path_to_csv_file)
 
+# file = pd.read_csv(args.out_path_to_csv_file)
 # print(sum(file['Погибло']), sum(file['Погибло детей']), sum(file['Ранено']), sum(file['Ранено детей']))
